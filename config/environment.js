@@ -4,6 +4,12 @@ module.exports = function(environment) {
   var ENV = {
     modulePrefix: 'ember-codereview',
     environment: environment,
+    firebase: {
+      apiKey: "AIzaSyAiX2CpDBtFWde0SBtDv7HD5kTtMJ2gvxc",
+      authDomain: "message-board-141e8.firebaseapp.com",
+      databaseURL: "https://message-board-141e8.firebaseio.com",
+      storageBucket: "message-board-141e8.appspot.com",
+    },
     baseURL: '/',
     locationType: 'auto',
     EmberENV: {
