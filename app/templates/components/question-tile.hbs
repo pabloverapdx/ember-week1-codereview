@@ -1,3 +1,5 @@
 <li>{{question-in-component.content}}: {{question-in-component.author}}, {{question-in-component.notes}}
   <button {{action 'delete' question-in-component}}>Delete</button>
+  
+  {{update-question question-in-component=question-in-component update="update"}}
 </li>

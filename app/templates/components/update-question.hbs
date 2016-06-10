@@ -1,1 +1,23 @@
-{{yield}}
+{{updateQuestionForm}}
+  <h4>Update {{question-in-component.content}}: {{question-in-component.author}}, {{question-in-component.notes}}</h4>
+    <div>
+      <form>
+        <div class="form-group">
+          <label for="content">Content</label>
+          {{input value=content id="content" placeholder=question-in-component.content}}
+        </div>
+
+        <div class="form-group">
+          <label for="author">Author</label>
+          {{input value=author id="author" placeholder=question-in-component.author}}
+        </div>
+
+        <div class="form-group">
+          <label for="notes">Notes</label>
+          {{input value=notes id="notes" placeholder=question-in-component.notes}}
+        </div>
+
+        <button {{action 'update' question-in-component}}>Save</button>
+      </form>
+    </div>
+    <button {{action 'updateRentalForm'}}>Update</button>
