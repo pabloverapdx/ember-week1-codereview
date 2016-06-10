@@ -1,12 +1,12 @@
 { "questions": [{
     "content": "What is Javascript?",
     "author": "Pablo Vera",
-    "notes": "Seems very important because all browsers support it"
+    "notes": "Seems very important because all browsers support it."
   },
   {
     "content": "What is HTML?",
     "author": "Cody Wetherill",
-    "notes": "Cody, you should know what this is"
+    "notes": "Cody, you should know what this is."
   },
   {
     "content": "What is CSS?",

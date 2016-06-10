@@ -1,7 +1,9 @@
+<div class="jumbotron">
 <h2 id="title">Message Board</h2>
+</div>
 
 <ul>
   {{#each model as |question-from-template|}}
-  {{question-tile question-in-component=question-from-template}}
+  {{question-tile question-in-component=question-from-template destroyQuestion="destroyQuestion"}}
   {{/each}}
 </ul>
