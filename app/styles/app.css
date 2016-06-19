@@ -6,3 +6,8 @@ li {
   text-align: center;
   list-style-type: none;
 }
+
+.links {
+  float: right;
+  padding: 15px;
+}
