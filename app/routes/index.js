@@ -9,12 +9,22 @@ export default Ember.Route.extend({
       anything.destroyRecord();
       this.transitionTo('index');
     },
-    update(question, params) {
-      Object.keys(params).forEach(function(key) {
-        if(params[key]!==undefined) {
-          rental.set(key,params[key]);
-        }
-      })
+    save3(params) {
+      var newQuestion = this.store.createRecord('question', params);
+      newQuestion.save();
+      this.transitionTo('index');
     }
   }
 });
+
+
+//     },
+//     update(question, params) {
+//       Object.keys(params).forEach(function(key) {
+//         if(params[key]!==undefined) {
+//           question.set(key,params[key]);
+//         }
+//       });
+//     }
+//   }
+// });
