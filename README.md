@@ -1,53 +1,48 @@
-# Ember-codereview
+## Message Board
 
-This README outlines the details of collaborating on this Ember application.
-A short introduction of this app could easily go here.
+#### Ask, edit, and delete questions.
 
-## Prerequisites
+#### By Pablo Vera
 
-You will need the following things properly installed on your computer.
+## Description
+ A website where the user can ask, edit, and delete questions. 
 
-* [Git](http://git-scm.com/)
-* [Node.js](http://nodejs.org/) (with NPM)
-* [Bower](http://bower.io/)
-* [Ember CLI](http://www.ember-cli.com/)
-* [PhantomJS](http://phantomjs.org/)
+## Setup/Installation Requirements
 
-## Installation
+Clone this repository. Open terminal and:
 
-* `git clone <repository-url>` this repository
-* change into the new directory
-* `npm install`
-* `bower install`
+```
+$ cd ~/Desktop
+$ git clone https://github.com/pabloverapdx/meal-tracker.git
+$ cd meal-tracker
+```
 
-## Running / Development
+Install Node tools
+```
+$ npm init
+$ npm install
+```
+Install Bower tools
+```
+$ bower init
+$ bower install
+```
 
-* `ember server`
-* Visit your app at [http://localhost:4200](http://localhost:4200).
+Install globals if needed (gulp, bower, sass, typescript, typescript packages.)
+```
+$ npm install gulp -g
+$ npm install bower -g
+$ gem install sass
+$ npm install typescript -g
+$ apm install atom-typescript
+```
 
-### Code Generators
+To view in browser
+```
+$ gulp build
+$ gulp serve
+```
 
-Make use of the many generators for code, try `ember help generate` for more details
+## Technologies Used
 
-### Running Tests
-
-* `ember test`
-* `ember test --server`
-
-### Building
-
-* `ember build` (development)
-* `ember build --environment production` (production)
-
-### Deploying
-
-Specify what it takes to deploy your app.
-
-## Further Reading / Useful Links
-
-* [ember.js](http://emberjs.com/)
-* [ember-cli](http://www.ember-cli.com/)
-* Development Browser Extensions
-  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
-  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
-
+Angular2 Javascript, Gulp, Bower, TypeScript, SASS.
