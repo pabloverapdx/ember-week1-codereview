@@ -1,8 +1,11 @@
 import Ember from 'ember';
 
 export default Ember.Route.extend({
-  model() {
-    return this.store.findAll('question');
+  model(){
+    return Ember.RSVP.hash({
+      questions: this.store.findAll('question'),
+      answers: this.store.findAll('answer')
+    });
   },
   actions: {
     destroyQuestion(anything) {
@@ -22,8 +25,17 @@ export default Ember.Route.extend({
       var newQuestion = this.store.createRecord('question', params);
       newQuestion.save();
       this.transitionTo('index');
-      }
+    },
+    saveAnswer(params) {
+      var newAnswer = this.store.createRecord('answer', params);
+      var question = params.question; debugger;
+      question.get('answers').addObject(newAnswer);
+      newAnswer.save().then(function(){
+        return question.save();
+      });
+      this.transitionTo('index', params.question)
     }
+  }
 });
 
 
