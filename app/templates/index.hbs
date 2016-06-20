@@ -10,7 +10,7 @@
 
 <ul>
   {{#each model as |question-from-template|}}
-  {{question-tile question-in-component=question-from-template destroyQuestion="destroyQuestion"}}
+  {{question-tile question-in-component=question-from-template update="update" destroyQuestion="destroyQuestion"}}
   {{/each}}
 </ul>
 

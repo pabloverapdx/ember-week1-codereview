@@ -1,4 +1,4 @@
-{{updateQuestionForm}}
+{{#if updateQuestionForm}}
   <h4>Update {{question-in-component.content}}: {{question-in-component.author}}, {{question-in-component.notes}}</h4>
     <div>
       <form>
@@ -17,7 +17,9 @@
           {{input value=notes id="notes" placeholder=question-in-component.notes}}
         </div>
 
-        <button {{action 'update' question-in-component}}>Save</button>
+        <button {{action 'update' question-in-component}}>Save this Update</button>
       </form>
     </div>
+  {{else}}
     <button {{action 'updateQuestionForm'}}>Update</button>
+  {{/if}}
