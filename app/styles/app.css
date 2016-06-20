@@ -11,3 +11,8 @@ li {
   float: right;
   padding: 15px;
 }
+
+.newQuestionForm {
+  display: flex;
+  align-content: center;
+}
