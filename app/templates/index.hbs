@@ -10,10 +10,7 @@
 
 <ul>
   {{#each model.questions as |question|}}
-  {{question-tile question=question update="update" delete="delete"}}
-  {{/each}}
-  {{#each model.answers as |answer|}}
-  {{new-answer question=model saveAnswer="saveAnswer"}}
+  {{question-tile question=question}}
   {{/each}}
 </ul>
 
