@@ -9,8 +9,8 @@
 </div>
 
 <ul>
-  {{#each model.questions as |question-from-template|}}
-  {{question-tile question-in-component=question-from-template update="update" destroyQuestion="destroyQuestion"}}
+  {{#each model.questions as |question|}}
+  {{question-tile question=question update="update" delete="delete"}}
   {{/each}}
   {{#each model.answers as |answer|}}
   {{new-answer question=model saveAnswer="saveAnswer"}}

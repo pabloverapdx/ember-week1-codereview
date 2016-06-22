@@ -1,1 +1,10 @@
-{{yield}}
+<h1>{{question.author}} was wondering </h1>
+<div>
+  {{question.content}}
+</div>
+
+<div>
+  {{update-question question=question update="update"}}
+</div>
+
+<button {{action "delete" question}}>Delete this question</button>
