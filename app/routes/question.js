@@ -16,7 +16,6 @@ export default Ember.Route.extend({
         }
       });
   question.save();
-    };
   },
   saveAnswer(params){
     var newAnswer = this.store.createRecord('answer', params);
@@ -26,6 +25,6 @@ export default Ember.Route.extend({
       return question.save();
     });
     this.transitionTo('question', params.question);
-  }
-}
+    }
+  } 
 });
