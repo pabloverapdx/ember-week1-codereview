@@ -4,7 +4,7 @@ export default Ember.Component.extend({
   updateQuestionForm: false,
 
   fullQuestion: Ember.computed('question.content', 'question.author', function() {
-   return this.get('question.content') + ' asked by ' + this.get('question.author');
+   return this.get('question.content') + ' asked by: ' + this.get('question.author') + '. ' + ' The answer is: ';
   }),
 
   actions: {
