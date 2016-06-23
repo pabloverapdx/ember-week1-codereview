@@ -1,3 +1,12 @@
 <div>
   {{question-detail question=model delete="delete" update="update" }}
 </div>
+<div>
+{{#each model.answers as |answer|}}
+  <li>
+    {{answer.author}}
+    {{answer.content}}
+  </li>
+  {{/each}}
+  {{new-answer question=model saveAnswer="saveAnswer"}}
+</div>
