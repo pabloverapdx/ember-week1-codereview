@@ -1,48 +1,51 @@
-## Message Board
+# Message Board | JS Week 3 Code Review by Pablo Vera.
 
-#### Ask, edit, and delete questions.
+Post questions, edit them, and delete them. Add answers to all questions as well!
 
-#### By Pablo Vera
+## Prerequisites
 
-## Description
- A website where the user can ask, edit, and delete questions. 
+You will need the following things properly installed on your computer.
 
-## Setup/Installation Requirements
+* [Git](http://git-scm.com/)
+* [Node.js](http://nodejs.org/) (with NPM)
+* [Bower](http://bower.io/)
+* [Ember CLI](http://ember-cli.com/)
+* [PhantomJS](http://phantomjs.org/)
 
-Clone this repository. Open terminal and:
+## Installation
 
-```
-$ cd ~/Desktop
-$ git clone https://github.com/pabloverapdx/meal-tracker.git
-$ cd meal-tracker
-```
+* `git clone <repository-url>` this repository
+* change into the new directory
+* `npm install`
+* `bower install`
 
-Install Node tools
-```
-$ npm init
-$ npm install
-```
-Install Bower tools
-```
-$ bower init
-$ bower install
-```
+## Running / Development
 
-Install globals if needed (gulp, bower, sass, typescript, typescript packages.)
-```
-$ npm install gulp -g
-$ npm install bower -g
-$ gem install sass
-$ npm install typescript -g
-$ apm install atom-typescript
-```
+* `ember server`
+* Visit your app at [http://localhost:4200](http://localhost:4200).
 
-To view in browser
-```
-$ gulp build
-$ gulp serve
-```
+### Code Generators
 
-## Technologies Used
+Make use of the many generators for code, try `ember help generate` for more details
 
-Angular2 Javascript, Gulp, Bower, TypeScript, SASS.
+### Running Tests
+
+* `ember test`
+* `ember test --server`
+
+### Building
+
+* `ember build` (development)
+* `ember build --environment production` (production)
+
+### Deploying
+
+Specify what it takes to deploy your app.
+
+## Further Reading / Useful Links
+
+* [ember.js](http://emberjs.com/)
+* [ember-cli](http://ember-cli.com/)
+* Development Browser Extensions
+  * [ember inspector for chrome](https://chrome.google.com/webstore/detail/ember-inspector/bmdblncegkenkacieihfhpjfppoconhi)
+  * [ember inspector for firefox](https://addons.mozilla.org/en-US/firefox/addon/ember-inspector/)
