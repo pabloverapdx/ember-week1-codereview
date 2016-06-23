@@ -1,0 +1,5 @@
+{{#each favoriteAnswer.questions as |question|}}
+  {{#link-to 'question' question.id}}
+    {{question.content}}
+  {{/link-to}}
+{{/each}}
